@@ -1,0 +1,29 @@
+{
+  "name": "test-task-shopltk",
+  "version": "1.0.0",
+  "description": "Example of test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "mpe":"npx cypress run --spec 'cypress/integration/test-specs/*/*mpe.spec.js'",
+    "smokePositive":"npx cypress run --spec 'cypress/integration/test-specs/*/*positive.smoke.spec.js'",
+    "smokeNegative":"npx cypress run --spec 'cypress/integration/test-specs/*/*negative.smoke.spec.js'",
+    "regression":"npm run mpe && npm run smokePositive && npm runNegative"
+    
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ILopatenko/test-task-shopltk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ILopatenko/test-task-shopltk/issues"
+  },
+  "homepage": "https://github.com/ILopatenko/test-task-shopltk#readme",
+  "dependencies": {
+    "cypress": "^9.6.0"
+  }
+}
